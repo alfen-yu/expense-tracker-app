@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.container {
+    max-width: 350px;
+    background-color: #4A4A4A;
+    min-height: 600px;
+    margin: auto;
+    color: #F2F2F2;
+    margin-top: 50px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main-heading {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.expense-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #6B6B6B;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.expense-container > h4:first-of-type {
+    border-right: 2px solid #4A4A4A;
 }
 
-.App-link {
-  color: #61dafb;
+.expense-container > h4 {
+    flex: 1;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-transaction {
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-image {
+    height: 21px;
+    width: 20px;
+    margin-top: 17px;
+    border-radius: 20px;
+}
+
+#add-image:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.transaction-form input{
+    width: 100%;
+    margin: 10px 0 10px 5px;
+    padding: 5px 0;
+}
+
+.transaction-list {
+    margin-top: 15px;
+    padding: 0;
+}
+
+.transaction-list li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #6B6B6B;
+    padding: 10px 10px;
+    border-radius: 30px;
+    margin-bottom: 12px;
 }
