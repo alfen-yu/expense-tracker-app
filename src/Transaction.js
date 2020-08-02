@@ -6,7 +6,7 @@ const Transaction = ({ transaction }) => {
 
     return (
         <li>
-            <span>{transaction.description}</span>
+            <span>{transaction.text}</span>
             <span>{sign}Rs.{Math.abs(transaction.amount)}</span>
         </li>
     )
